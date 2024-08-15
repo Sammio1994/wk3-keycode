@@ -1,5 +1,5 @@
 // Wait for the user to press a key
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', (event) => {
     // Capture the key event and report .code, .key, and .which values
     let output = document.getElementById('output');
     output.innerHTML = `
@@ -9,7 +9,7 @@ document.addEventListener('keydown', function(event) {
     `;
 });
 
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', (event) => {
     // Capture the X and Y coordinates of the mouse pointer
     let x = event.clientX;
     let y = event.clientY;
